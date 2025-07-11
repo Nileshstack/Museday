@@ -21,7 +21,7 @@ const Blog = () => {
 
   const getPost = async () => {
     try {
-      let data = await fetch('http://localhost:3000/api/show', {
+      let data = await fetch('/api/show', {
         cache: "no-store"
       });
       data = await data.json();
