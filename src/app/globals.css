@@ -1,0 +1,43 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.dark {
+  background-color: #000;  /* Full black */
+  color: #bbb;
+}
+
+.light {
+  background-color: #f7f4f4;
+  color: #111;
+}
+
+/* Container should fill height and content */
+.container {
+  max-width: 1366px;
+  min-height: 100vh; /* Ensure it takes at least full screen height */
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Smooth theme change */
+.theme {
+  transition: 1s all ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
